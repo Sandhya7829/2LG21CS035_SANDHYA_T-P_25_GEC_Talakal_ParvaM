@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String Concatenation And Reversal</title>
+    <script>
+        function processStrings() {
+        let str1 = document.getElementById("str1").value;
+        let str2 = document.getElementById("str2").value;
+            
+           
+        let concatenated = str1 + str2;
+        document.getElementById("concatenated").innerText = "Concatenated String: " + concatenated;
+
+            
+        let reversed = concatenated.split('').reverse().join('');
+        document.getElementById("reversed").innerText = "Reversed String: " + reversed;
+        }
+    </script>
+</head>
+<body>
+    <h2>String Concatenation and Reversal</h2>
+    <label for="str1">Enter First String:</label>
+    <input type="text" id="str1"><br>
+    <br>
+
+    <label for="str2">Enter Second String:</label>
+    <input type="text" id="str2"><br>
+    <br>
+
+    <button onclick="processStrings()">Concatenate & Reverse</button>
+
+    <h3 id="concatenated"></h3>
+    <h3 id="reversed"></h3>
+</body>
+</html>
