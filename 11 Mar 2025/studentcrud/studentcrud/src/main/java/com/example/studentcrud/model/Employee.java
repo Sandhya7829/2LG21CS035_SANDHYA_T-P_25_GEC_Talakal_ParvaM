@@ -16,6 +16,12 @@ public class Employee {
     private String name;
     private String email;
     private String phone;
+    private String address;
+    private String gender;
+    private String dateofbirth;
+    private String course;
+    private String language;
+    private String files;
     
     public Long getId( ) {
         return id;
@@ -41,6 +47,43 @@ public class Employee {
     public void setPhone(String phone){
         this.phone = phone;
     }
+    public String getAddress(){
+        return address;
+    }
+    public void setAddress(String address){
+        this.address = address;
+    }
 
+    public String getGender(){
+        return gender;
+    }
+    public void setGender(String gender){
+        this.gender = gender;
+    }
+
+    public String getDOB(){
+        return dateofbirth;
+    }
+    public void setDOB(String dateofbirth){
+        this.dateofbirth = dateofbirth;
+    }
+    public String getCourse(){
+        return course;
+    }
+    public void setCourse(String course){
+        this.course = course;
+    }
+    public String getLanguage(){
+        return language;
+    }
+    public void setLanguage(String language){
+        this.language= language;
+    }
+    public String getFile(){
+        return files;
+    }
+    public void setFile(String files){
+        this.files= files;
+    }
 
 }
